@@ -1,0 +1,50 @@
+1. User
+    - First Name,
+    - Last Name,
+    - Email 
+    - Password
+    - Phone Number
+    - DoB
+    - Gender
+    - About
+    - Avatar
+    - OTP
+    - Status - default: 1
+
+
+2. Category
+    - Name 
+    - Image
+
+3. Sub Category
+    - Name 
+    - CategoryID
+    - Image
+
+4. Product
+    - Name 
+    - CategoryID
+    - SubCategoryID
+    - Quantity
+    - Price
+    - short Description
+    - Description
+    - Thumbnail 
+    - Images
+    - Status 
+
+5. Cart 
+
+6. Order 
+    - OrderID
+    - UserID
+    - ProductID
+    - Quantity
+    - Price 
+    - Image 
+    
+
+
+7. Sign In (email/mobile, password) / Sign Up (email, Password, contact)
+
+8. Login with OTP
