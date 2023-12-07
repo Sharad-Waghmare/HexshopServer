@@ -1,5 +1,4 @@
 import express from "express";
-// import Stripe from 'stripe';
 import mongoose from "mongoose";
 import userRouter from "./router/user.routers";
 import categorysRouter from "./router/categorys.router";

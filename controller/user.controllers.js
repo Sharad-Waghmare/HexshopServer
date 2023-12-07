@@ -248,11 +248,7 @@ export const SingUp = async (req, res) => {
         email: email,
         password: hashPassword,
         Contact: Contact,
-        // dob: dob,
-        // gender: gender,
-        // about: about,
         otp: otp,
-        // avatar: avatar,
       });
       newUser.save();
       if (newUser) {

@@ -30,7 +30,6 @@ const upload = multer({ storage: storage });
 //get all cart items
 export const getCartItems = async (req, res)=>{
     try {
-        // const userID = "650019f783f21b566cc2663c";
         const cartData = await CartModel.find();
         let total = 0;
         if(cartData){
@@ -116,16 +115,12 @@ export const addToCart = async (req, res) => {
 export const updateQuantity = async (req, res) => {
     try {
       const cartID = req.params.cart_id;
-    //   const { productID } = req.body;
       const { updatetype } = req.query;
   
-      const cartData = await CartModel.findOne({ _id: cartID });
-    //   const productData = await productsModel.findOne({ _id: productID });
+      const cartData = await CartModel.findOne({ _id: cartID })
   
       let quantity = cartData.quantity;
-      let subtotal = cartData.price
-    //   let price = productData.price;
-    //   console.log(price)
+      let subtotal = cartData.price;
   
       if (updatetype === "increment") {
         quantity += 1;

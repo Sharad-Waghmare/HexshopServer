@@ -151,7 +151,6 @@ export const getProduct = async (req, res) => {
     const id = req.params.product_id;
 
     const productData = await ProductModel.findOne({ _id: id });
-    // console.log(ProductData.images[0]);
 
     const image = productData.images.split(",");
     console.log(image[1]);

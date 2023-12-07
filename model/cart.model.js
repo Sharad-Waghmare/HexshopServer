@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import userModels from "./user.models";
 import productsModel from "./products.model";
 
 
@@ -7,11 +6,6 @@ const Schema = mongoose.Schema;
 
 
 const CartSchema = new Schema({
-    // userID:{
-    //     type: Schema.Types.ObjectId,
-    //     required: true,
-    //     ref: userModels
-    // },
     productID:{
         type: Schema.Types.ObjectId,
         required: true,
